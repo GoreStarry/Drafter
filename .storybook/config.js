@@ -7,7 +7,6 @@ function loadStories() {
   require('../src/containers/KeyBinding/KeyBinding.stories.jsx');
   require('../src/containers/DraftTestPlayground/DraftTestPlayground.stories.jsx');
   require('../src/components/DraftConsolePanel/DraftConsolePanel.stories.jsx')
-// You can require as many stories as you need.
 }
 
 configure(loadStories, module);

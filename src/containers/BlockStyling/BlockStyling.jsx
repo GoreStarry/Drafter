@@ -1,9 +1,10 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import styles from './BlockStyling.css'
 import { EditorState, DefaultDraftBlockRenderMap, RichUtils } from 'draft-js';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
+
+import styles from './BlockStyling.css'
 
 import StyledEditor from '../../components/StyledEditor';
 import DraftConsolePanel from '../../components/DraftConsolePanel';

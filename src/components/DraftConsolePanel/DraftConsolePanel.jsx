@@ -52,23 +52,46 @@ class DraftConsolePanel extends PureComponent {
         console.log(editorState.getCurrentInlineStyle());
     }
 
+    clEntityMap = () => {
+        const getCurrentContent = this.props.editorState.getCurrentContent();
+        try {
+            const lastEntityKey = getCurrentContent.getLastCreatedEntityKey();
+            const lastEntity = getCurrentContent.getEntity(lastEntityKey);
+            console.log(lastEntity);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     render() {
 
 
         return (
             <MuiThemeProvider>
               <div className="DraftConsolePanel">
-                <label htmlFor=''>EditorState: </label>
+                <label htmlFor=''>
+                  EditorState:
+                </label>
                 <RaisedButton label="Immutable" onClick={ this.clEditorState } />
                 <RaisedButton label="TO JS" onClick={ this.clEditorStateToJS } />
-                <label htmlFor=''>CurrentContent:</label>
+                <label htmlFor=''>
+                  CurrentContent:
+                </label>
                 <RaisedButton label="TO JS" onClick={ this.clContentState } />
                 <RaisedButton label="convert To Raw" onClick={ this.clRawContentState } />
-                <label htmlFor=''>Block:</label>
+                <label htmlFor=''>
+                  Block:
+                </label>
                 <RaisedButton label="Block Tree" onClick={ this.clBlockTree } />
                 <RaisedButton label="Block Key" onClick={ this.clBlockKey } />
-                <label htmlFor=''>Inline Style:</label>
+                <label htmlFor=''>
+                  Inline Style:
+                </label>
                 <RaisedButton label="Current Inline Style" onClick={ this.clCurrentInlineStyle } />
+                <label htmlFor=''>
+                  Entity:
+                </label>
+                <RaisedButton label="Entity Map" onClick={ this.clEntityMap } />
               </div>
             </MuiThemeProvider>
             );

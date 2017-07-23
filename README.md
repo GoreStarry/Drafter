@@ -5,10 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ``` bash
 # install dependencies
 yarn
-# dev server
+# run storybook on http://localhost:9001/
 yarn start
-# build for production with minification
-yarn build
+
 ```
 ## Draft 主要資料結構
 
