@@ -3,5 +3,5 @@ import { storiesOf } from '@storybook/react'
 
 import Decorator from './Decorator'
 
-storiesOf('Decorator', module).add('XXX', () => <Decorator />
-)
+storiesOf('Decorator', module)
+  .add('Regexp & Entity', () => <Decorator />)
