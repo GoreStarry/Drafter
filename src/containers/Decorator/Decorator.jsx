@@ -65,6 +65,7 @@ class Decorator extends PureComponent {
         return (
             <div className="Decorator">
               <StyledEditor editorState={ editorState } onChange={ this._onChangeEditor } />
+              <h2>[Keywords]: 維尼 & 包子</h2>
               <MuiThemeProvider>
                 <div>
                   <RaisedButton

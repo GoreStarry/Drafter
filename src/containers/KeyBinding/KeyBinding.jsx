@@ -135,6 +135,8 @@ class KeyBinding extends PureComponent {
           handleKeyCommand={ this._handleKeyCommand }
           blockStyleFn={ myBlockStyleFn }
           blockRenderMap={ extendedBlockRenderMap } />
+        <h2>[Cmd+E]: toggle block styling</h2>
+        <h2>[Cmd+Enter]: break</h2>
         <DraftConsolePanel editorState={ editorState } />
       </div>
       );

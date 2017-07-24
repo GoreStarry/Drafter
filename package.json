@@ -19,10 +19,12 @@
         "build": "npm run build-css && react-scripts build",
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject",
-        "storybook": "start-storybook -p 9001 -c .storybook"
+        "storybook": "start-storybook -p 9001 -c .storybook",
+        "deploy-storybook": "storybook-to-ghpages"
     },
     "devDependencies": {
         "@storybook/react": "^3.1.9",
+        "@storybook/storybook-deployer": "^2.0.0",
         "node-sass-chokidar": "^0.0.3",
         "npm-run-all": "^4.0.2"
     }
